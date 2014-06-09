@@ -17,16 +17,12 @@ Ejemplo:
 HOLA 192.168.0.4 Nachin Te Amo
 7) El cambio deberia verse reflejado abajo del chat
 
-8) No se porque, pero el último mensaje enviado jamas se carga completo, pero la transferencia es consistente (un problema con los threads probablemente.
 
 
+Son 2 funciones en 1 solo servidor (funcionan al mismo tiempo mediante Threads)
 
-#CAMBIOS
+->Primera funcion encargada de enviar y registrar mensajes, dado un IP determinado
 
-Ahora hay 2 servidores en 1 solo servidor (funcionan al mismo tiempo mediante Threads)
+->Segunda funcion Transfiere un archivo, dado un path, y lo copia/pega en el mismo directorio donde se esté corriendo el servidor.
 
-1) Primer servidor se mantiene intacto, mismos comandos, etc
-
-2) Transfiere un archivo, dado un path, y lo copia/pega en el mismo directorio donde se esté corriendo el servidor
-
-NOTA: por ahora estoy muerto Dx, por lo que la parte del String todavia no la hago, puedes poner lo que quieras, pero la funcion funciona de una sola manera: copia pega un archivo llamado 'log.txt' que se encuentre en el directorio C://, porlo que crea un archivo llamado log.txt y ponle los datos que quieres, al correr el programa y poner cualquier cosa en el segundo FORM, de todas formas correrá (pero debe existir el archivo). mas adelante extender para buscar cualquier archivo según el PATH.
+El Path tiene la estructura C:\\carpeta\carpeta\...\archivo.txt como ejemplo
