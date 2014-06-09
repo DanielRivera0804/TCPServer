@@ -8,7 +8,7 @@ Pasos para la tarea 2
 
 3)Corre en ambos pc ServidorHTTP.java
 
-4)En 1 de los pc corre TCPServer.java , pero antes debes modificar la linea 13 de TCPClient, reemplazando la IP que se encuentra por la IP del pc donde se correrá el TCPSERVER
+4)En 1 de los pc corre TCPServer.java , pero antes debes modificar la linea 13 de TCPClient, reemplazando la IP que se encuentra por la IP del pc donde se correrá el TCPSERVER. También se debe modificar la funcion enviarArchivoAServidorTCP, del mismo .java para cambiar la ip.
 
 5) En ambos computadores, entrar a http://localhost:90/InterfazChat.html
 
